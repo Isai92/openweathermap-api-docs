@@ -35,7 +35,7 @@ https://api.openweathermap.org/data/2.5/weather?lat=48.85&lon=2.35&appid=[API_KE
 * *Burst* requests from multiple users. 
 
 ### Solutions: 
-1. Add **Delay** Between Calls: 
+#### 1. Add **Delay** Between Calls.  
 Wait 1 second between calls, the following is a *Python* example:
 ```
 import time  
@@ -45,8 +45,8 @@ def make_call(url):
     time.sleep(1.2)  # 60 calls/min = 1 call/sec + 20% buffer  
     return requests.get(url) 
 ```
-2. Cache Responses
- The following is a JavaScript caching example:
+#### 2. Cache Responses
+The following is a *JavaScript* caching example:
 ```
 const cache = {};  
 async function getCachedWeather(city) {  
@@ -56,5 +56,5 @@ async function getCachedWeather(city) {
     return data;  
 } 
 ```
-3. Upgrade Tier
+#### 3. Upgrade Tier
 Consider paid plans for higher limits.
