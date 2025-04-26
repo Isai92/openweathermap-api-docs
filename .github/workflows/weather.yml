@@ -28,7 +28,7 @@ jobs:
           python examples/weather_parser.py > weather_report.txt  # Save output to file
 
       - name: Upload weather report as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: weather-report
           path: weather_report.txt
