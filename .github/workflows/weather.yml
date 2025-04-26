@@ -1,5 +1,5 @@
 name: Weather Report
-on: [workflow_dispatch]
+on: [workflow_dispatch]  # Run manually
 
 jobs:
   generate-report:
@@ -18,5 +18,5 @@ jobs:
       
       - name: Run weather parser
         env:
-          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}  # Set in repo settings
         run: python weather_parser.py
