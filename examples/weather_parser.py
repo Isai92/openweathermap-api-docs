@@ -4,7 +4,7 @@ import requests
 def get_weather():
     KEY = os.getenv("API_KEY")  # Get from environment variables
     CITY = "London"
-    COUNTRY_CODE = "GB"  # UK → GB
+    COUNTRY_CODE = "GB"  
     
     try:
         # Make API call
