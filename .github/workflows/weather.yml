@@ -19,4 +19,4 @@ jobs:
       - name: Run weather parser
         env:
           API_KEY: ${{ secrets.API_KEY }}  # Set in repo settings
-        run: python weather_parser.py
+        run: python examples/weather_parser.py
