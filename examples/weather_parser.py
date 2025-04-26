@@ -2,13 +2,13 @@ import os
 import requests
 
 def get_weather():
-    API_KEY = os.getenv("API_KEY")  # Get from environment variables
+    KEY = os.getenv("API_KEY")  # Get from environment variables
     CITY = "London"
     COUNTRY_CODE = "GB"  # UK → GB
     
     try:
         # Make API call
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={CITY},{COUNTRY_CODE}&appid={API_KEY}"
+        url = f"https://api.openweathermap.org/data/2.5/weather?q={CITY},{COUNTRY_CODE}&appid={KEY}"
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
