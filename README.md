@@ -17,18 +17,19 @@
    [Sign up at OpenWeatherMap](https://openweathermap.org/api) (Free tier available)
 
 2. **Clone Repository**  
-   ```bash
+   ```
    git clone https://github.com/Isai92/openweathermap-api-docs.git
+   ```
 
 3. **Run Sample Workflow**
 * Set API key in GitHub Secrets
 * Trigger workflow manually in Actions tab
 
 ### Example Output
-´´´
+```
 Weather in London:
 - Temperature: 18.5°C
 - Humidity: 65%
 - Conditions: Scattered clouds
-´´´
+```
 
